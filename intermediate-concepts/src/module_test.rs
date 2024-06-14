@@ -20,7 +20,7 @@ pub fn os_command_example_1() {
     println!("\n\n");
 }
 
-fn os_command_example_2() {
+pub fn os_command_example_2() {
     println!("\n\n");
     let mut cmd_root = Command::new("ls");
 
