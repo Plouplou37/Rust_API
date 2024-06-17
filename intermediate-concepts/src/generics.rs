@@ -1,11 +1,6 @@
-/*enum Option<T> {
-    Some(T),
-    None,
-}*/
-
 use std::process::Output;
 
-fn option_example(x: i32) -> Option<String> {
+pub fn option_example(x: i32) -> Option<String> {
     match x > 2 {
         true => Some(String::from("result")),
         false => None,
@@ -32,7 +27,7 @@ struct Cube<T> {
     lenght: T,
 }
 
-fn struct_example() {
+pub fn struct_example() {
     let r1 = Rectangle {
         height: 1,
         width: 5,

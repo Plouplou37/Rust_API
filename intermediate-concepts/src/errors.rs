@@ -2,7 +2,7 @@ use std::io::{Error, ErrorKind};
 use std::process::Command;
 
 // Linux only
-fn error_handling_example_1(dir: &str) {
+pub fn error_handling_example_1(dir: &str) {
     println!("\n\n");
 
     let mut list_cmd = Command::new("ls");
@@ -16,7 +16,7 @@ fn error_handling_example_1(dir: &str) {
 }
 
 // Linux only
-fn error_handling_example_2(dir: &str) {
+pub fn error_handling_example_2(dir: &str) {
     println!("\n\n");
 
     let mut list_cmd = Command::new("ls");
@@ -33,7 +33,7 @@ fn error_handling_example_2(dir: &str) {
 }
 
 // Linux only
-fn error_handling_example_3(dir: &str) {
+pub fn error_handling_example_3(dir: &str) {
     println!("\n\n");
 
     let mut list_cmd = Command::new("ls");
@@ -53,7 +53,7 @@ fn error_handling_example_3(dir: &str) {
 }
 
 // Linux only
-fn error_handling_example_4(dir: &str) -> Result<i32, Error> {
+pub fn error_handling_example_4(dir: &str) -> Result<i32, Error> {
     println!("\n\n");
 
     let mut list_cmd = Command::new("ls");
